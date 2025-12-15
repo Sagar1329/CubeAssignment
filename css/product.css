@@ -1,0 +1,433 @@
+
+
+.product-section {
+    padding: 120px 0;
+}
+
+.product-container {
+    max-width: 1328px;
+    margin: 0 auto;
+    display: flex;
+    gap: 108px;
+    align-items: flex-start;
+}
+
+
+.product-gallery {
+    width: 610px;
+    max-width: 610px;
+    flex-shrink: 0;
+
+}
+
+.gallery-main {
+    width: 610px;
+
+    max-width: 610px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    max-width: 610px;
+    height: 672px;
+    object-fit: cover;
+
+}
+
+.gallery-btn {
+    position: absolute;
+    bottom: 24px;
+    top: auto;
+    transform: none;
+
+    width: 38px;
+    height: 38px;
+    border: 1px solid #032E15;
+    border-radius: 50%;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.gallery-btn.prev {
+    left: 16px;
+    background-image: url("../assets/images/left-arrow.webp");
+}
+
+.gallery-btn.next {
+    right: 16px;
+    background-image: url("../assets/images/right-arrow.webp");
+}
+
+
+.gallery-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #032E15;
+}
+
+.dot.active {
+    background-color: #032E15;
+}
+
+
+.gallery-thumbnails {
+    width: 610px;
+    max-width: 610px;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.gallery-thumbnails img {
+    width: 130px !important;
+
+    height: 130px !important;
+    object-fit: cover;
+    border-radius: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+}
+
+
+
+
+
+.product-details {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.product-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #032E15;
+
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #00C950;
+}
+
+.product-rating-text {
+    color: #032E15;
+    font-weight: 300;
+}
+
+.product-description {
+    font-size: 16px;
+    line-height: 20px;
+    color: #032E15;
+}
+
+
+
+.subscription-card {
+    border: 1px solid #B8B8B8;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.card-badge {
+    height: 44px;
+    background: linear-gradient(270deg, #032E15, #00C950);
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subscription-option {
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.subscription-option input {
+    margin: 0;
+}
+
+.subscription-option.active {
+    background: #F8F8F8;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.price del {
+    margin-left: 8px;
+    color: #B8B8B8;
+    font-weight: 300;
+}
+
+
+
+.section {
+    padding: 16px 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #032E15;
+}
+
+
+.fragrance-grid {
+    display: flex;
+    gap: 16px;
+}
+
+.fragrance-option {
+    width: 127px;
+    height: 145px;
+    background: #F9F9F9;
+    border-radius: 6px;
+    border: 1px solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    position: relative;
+    cursor: pointer;
+}
+
+
+.fragrance-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.radio-ui {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #919798;
+    background: #fff;
+}
+
+
+.fragrance-option input:checked+.radio-ui {
+    background: linear-gradient(180deg, #032E15, #016630);
+    border-color: #032E15;
+}
+
+.fragrance-option input:checked~img,
+.fragrance-option input:checked~.fragrance-name {
+    filter: none;
+}
+
+.fragrance-option input:checked {
+
+}
+
+.fragrance-option:has(input:checked) {
+    border: 1px solid #032E15;
+    background: #fff;
+}
+
+
+.fragrance-option img {
+    width: 55px;
+}
+
+
+.fragrance-name {
+    font-size: 13px;
+    color: #032E15;
+}
+
+
+.tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 7px;
+    padding: 4px 6px;
+    color: #fff;
+    background: linear-gradient(180deg, #032E15, #016630);
+    border-radius: 4px 0 4px 0;
+}
+
+
+
+
+
+.included-boxes {
+    display: flex;
+    gap: 16px;
+}
+
+
+.included {
+    height: 160px;
+    border: 1px solid #919798;
+    border-radius: 6px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #fff;
+}
+
+.included.active {
+    border-color: #6F2CFF;
+}
+
+
+.included-single {
+    width: 166px;
+}
+
+
+.included-multi {
+    flex: 1;
+ 
+    min-width: 260px;
+
+}
+
+
+.included-title {
+    font-size: 14px;
+    color: #6F7577;
+    margin-bottom: 8px;
+    text-align: start;
+}
+
+
+.included-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.included-content img {
+    width: 84px;
+}
+
+.mini-bottles {
+    display: flex;
+    gap: 12px;
+}
+
+.mini-bottles img {
+    width: 55px;
+}
+
+
+
+
+
+
+.benefits {
+    list-style: none;
+    padding: 16px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+.benefits li {
+    position: relative;
+    padding-left: 22px;
+    color: #032E15;
+}
+
+
+.benefits li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../assets/images/sealCheck.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+.add-to-cart {
+    height: 52px;
+    margin: 16px;
+    background: linear-gradient(180deg, #032E15, #016630);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+.subscription-content {
+    display: none;
+}
+
+
+.subscription-content.active {
+    display: block;
+}

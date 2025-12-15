@@ -1,0 +1,131 @@
+
+
+.comparison-section {
+    padding: 140px 0;
+}
+
+.comparison-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 82px;
+}
+
+
+.comparison-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.comparison-header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #032E15;
+}
+
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2.2fr repeat(4, 1fr);
+    align-items: center;
+    border-bottom: 1px solid #666666;
+    min-height: 58px;
+}
+
+
+.table-header {
+    border-bottom: none;
+    padding-bottom: 24px;
+}
+
+
+.cell {
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.cell.feature {
+    text-align: left;
+    font-weight: 700;
+    color: #666666;
+}
+
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.brand img {
+    width: 100px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+.highlight {
+    background: #F0FDF4;
+    border-radius: 15px;
+    padding: 16px 0;
+}
+
+
+.icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+}
+
+
+.icon-check-highlighted {
+    background-color: #032E15;
+    background-image: url("../assets/images/check.webp");
+}
+
+.icon-check {
+    border: 1px solid #322D2D;
+    background-image: url("../assets/images/non-check.webp");
+}
+
+.icon-cross {
+    border: 1px solid #322D2D;
+    background-image: url("../assets/images/cross.webp");
+}
+
+.comparison-cta {
+    height: 56px;
+    padding: 0 32px;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

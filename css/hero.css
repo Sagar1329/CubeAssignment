@@ -1,0 +1,120 @@
+.hero {
+    min-height: 100vh;
+    background-image: url('../assets/images/first.webp');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+.hero-content {
+    position: absolute;
+    left: 74px;
+    top: 50%;
+    transform: translateY(-75%);
+
+    width: 692px;
+    height: 344px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 16px;
+    height: 40px;
+    width: fit-content;
+
+    background: linear-gradient(180deg,
+            rgba(3, 46, 21, 0.6),
+            rgba(1, 102, 48, 0.6));
+
+    border-radius: 10000px;
+}
+
+.hero-badge span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 112.2%;
+    letter-spacing: -1.3287px;
+
+    color: #032E15;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+
+
+
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+
+}
+
+.stat-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 87px;
+
+    background: linear-gradient(180deg,
+            rgba(3, 46, 21, 0.6),
+            rgba(1, 102, 48, 0.6));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 104%;
+    color: #0D542B;
+}
+
+.hero-cta {
+    width: 145px;
+    height: 49px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(180deg,
+            #032E15 0%,
+            #016630 100%);
+
+    border-radius: 505.644px;
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18.2px;
+    line-height: 16px;
+    color: #ffffff;
+}

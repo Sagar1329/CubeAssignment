@@ -1,0 +1,99 @@
+
+.collection-section {
+    padding: 120px 0;
+}
+
+.collection-container {
+    max-width: 1327px;
+    margin: 0 auto;
+    display: flex;
+    gap: 77px;
+    align-items: center;
+}
+
+
+.collection-content {
+    width: 626px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.collection-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #032E15;
+}
+
+
+.collection-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.accordion-body {
+    display: none;
+    padding: 24px;
+}
+
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+
+.accordion-item.active {
+    height: auto;
+}
+
+.accordion-header {
+    height: 72px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: #032E15;
+}
+
+.accordion-header .icon {
+    font-size: 24px;
+    color: #032E15;
+}
+
+
+.accordion-item.active .accordion-header {
+    height: 78px;
+}
+
+
+
+.accordion-body p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #666666;
+}
+
+
+.collection-image {
+    width: 587px;
+    height: 712px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
