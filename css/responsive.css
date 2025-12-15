@@ -111,7 +111,11 @@ section {
 
 
 @media (max-width: 768px) {
-
+.navbar {
+        position: relative;
+        height: auto;
+        padding: 16px;
+    }
 
     .navbar-nav {
         display: none;
@@ -202,9 +206,9 @@ section {
     
     
 
-        .navbar-nav.mobile-active {
-            display: flex;
-        }
+                .navbar-nav.mobile-active {
+                    top: 100%;
+                }
 }
 
 
